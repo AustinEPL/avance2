@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+
+    <servlet>
+        <servlet-name>conexion</servlet-name>
+        <servlet-class>com.proyecto.nuevoproyecto.Conexion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controladorCanchas</servlet-name>
+        <servlet-class>Controllers.ControladorCanchas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginController</servlet-name>
+        <servlet-class>Controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>panelAdminstracionControlador</servlet-name>
+        <servlet-class>Controllers.panelAdminstracionControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>conexion</servlet-name>
+        <url-pattern>/Conexion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controladorCanchas</servlet-name>
+        <url-pattern>/ControladorCanchas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>panelAdminstracionControlador</servlet-name>
+        <url-pattern>/panel/*</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
